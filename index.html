@@ -373,9 +373,9 @@
       <a class="ccard" href="tel:+41796873258"><div class="cname">Kim Ryter</div><div class="crole">Leitung</div><div class="cnum">+41 79 687 32 58</div></a>
       <div class="cgroup-label">COACHES & DJ</div>
       <a class="ccard" href="tel:+41795406060"><div class="cname">DeeJay Richi</div><div class="crole">DJ / Technik</div><div class="cnum">+41 79 540 60 60</div></a>
-      <a class="ccard" href="tel:+41783350927"><div class="cname">Johnny Rossato</div><div class="crole">Coach</div><div class="cnum">+41 78 335 09 27</div></a>
-      <a class="ccard" href="tel:+34630232731"><div class="cname">Pol F. Ryan</div><div class="crole">Coach</div><div class="cnum">+34 630 232 731</div></a>
-      <div class="ccard"><div class="cname">Gary O'Reilly</div><div class="crole">Coach</div><div class="cnum">oreillygaryone@gmail.com</div></div>
+      <div class="ccard"><div class="cname">Johnny Rossato</div><div class="crole">Coach</div></div>
+      <div class="ccard"><div class="cname">Pol F. Ryan</div><div class="crole">Coach</div></div>
+      <div class="ccard"><div class="cname">Gary O'Reilly</div><div class="crole">Coach</div></div>
       <div class="cgroup-label">FOTO & VIDEO</div>
       <a class="ccard" href="tel:+41797231808"><div class="cname">Sarah Lo Brutto</div><div class="crole">Foto & Video</div><div class="cnum">+41 79 723 18 08</div></a>
       <a class="ccard" href="tel:+41791524474"><div class="cname">Tobias Pohl</div><div class="crole">Foto & Video</div><div class="cnum">+41 79 152 44 74</div></a>
@@ -424,7 +424,8 @@
       [1080,"🎉 Opening & Fun Workshop",["Gary","Pol","Johnny","Richi"],"Belle Epoque","alle 3 Coaches gemeinsam","key"],
       [1140,"🍽 Abendessen",["ALLE"],"Intermezzo","","normal"],
       [1200,"💫 «Modern Workshop»",["Johnny","Richi"],"Belle Epoque","","normal"],
-      [1245,"🎶 Dance Night (bis 24:00)",["Richi"],"Belle Epoque","📸 Fotobox · FloorCast live","key"]
+      [1245,"🎶 Dance Night (bis 24:00)",["Richi"],"Belle Epoque","📸 Fotobox · FloorCast live","key"],
+      [1440,"🌙 Dance Night Ende · Gute Nacht",["Richi"],"Belle Epoque","","normal"]
     ],
     sa: [
       [480,"☕ Frühstück",["ALLE"],"Intermezzo","","normal"],
@@ -439,7 +440,8 @@
       [1050,"🌙 Pause / Community Time",["ALLE"],"„The Lounge“","1.5 h freie Zeit","normal"],
       [1140,"🍽 Abendessen",["ALLE"],"Intermezzo","","normal"],
       [1200,"🖤 «Black & White» Dance Night (bis 01:00)",["Richi"],"Belle Epoque","Motto „Black & White“ · 📸 Fotobox · FloorCast live","key"],
-      [1260,"🎤 Live-Slot: Dance-Fever-Ticketstart",["Kim","Richi"],"Belle Epoque","~2 Min. Live-Ankündigung · Wortlaut mit Marketing + Richi","key"]
+      [1260,"🎤 Live-Slot: Dance-Fever-Ticketstart",["Kim","Richi"],"Belle Epoque","~2 Min. Live-Ankündigung · Wortlaut mit Marketing + Richi","key"],
+      [1500,"🌙 «Black & White» Ende · Gute Nacht",["Richi"],"Belle Epoque","01:00","normal"]
     ],
     so: [
       [480,"☕ Frühstück",["ALLE"],"Intermezzo","","normal"],
@@ -495,7 +497,42 @@
   };
 
   const DATA_EN = {
-    do:{}, fr:{}, sa:{}, so:{}
+    do: {
+      "✈️ Anreise & Abholungen Coaches": {title:"✈️ Arrival & airport pickups (coaches)", notes:"Flight times + transfers TBD · pickup by COUNTRY HIGH"},
+      "🏨 Check-in Artists & Crew": {title:"🏨 Check-in artists & crew", notes:"Extra night Thu–Sun"},
+      "🍽 Abendessen": {title:"🍽 Dinner", notes:"Full board"}
+    },
+    fr: {
+      "☕ Frühstück": {title:"☕ Breakfast"},
+      "🚠 Gratis Titlis-Ausflug": {title:"🚠 Free Titlis excursion", notes:"for the coaches · to confirm with hotel/Titlis"},
+      "📸 Ankunft & Briefing Foto/Video": {title:"📸 Photo/Video arrival & briefing", notes:"shotlist per photo/video brief"},
+      "🎤 Sound-Check + Headsets testen": {title:"🎤 Sound check + headset test", notes:"before the opening · up to 3 headsets"},
+      "✅ Aufbau fertig · Bereit-Check": {title:"✅ Setup complete · ready check", notes:"all set for the guests"},
+      "🎫 Ankommen & Check-in Gäste": {title:"🎫 Guest arrival & check-in", notes:"Survival Kit waiting in the rooms"},
+      "🥂 Welcome Apéro": {title:"🥂 Welcome drinks"},
+      "🎉 Opening & Fun Workshop": {title:"🎉 Opening & Fun Workshop", notes:"all 3 coaches together"},
+      "🍽 Abendessen": {title:"🍽 Dinner"},
+      "🎶 Dance Night (bis 24:00)": {title:"🎶 Dance Night (until 24:00)", notes:"📸 Photo booth · FloorCast live"},
+      "🌙 Dance Night Ende · Gute Nacht": {title:"🌙 Dance Night ends · Good night"}
+    },
+    sa: {
+      "☕ Frühstück": {title:"☕ Breakfast"},
+      "💃 «Waltz Technique Session»": {notes:"Waltz technique on the dance 'Always Stay You'"},
+      "🍽 Mittagessen": {title:"🍽 Lunch"},
+      "☕ Kaffeepause": {title:"☕ Coffee break"},
+      "💃 «Catalan Mastery»": {notes:"Higher-level Catalan · dance set beforehand"},
+      "🌙 Pause / Community Time": {title:"🌙 Break / Community Time", notes:"1.5 h free time"},
+      "🍽 Abendessen": {title:"🍽 Dinner"},
+      "🖤 «Black & White» Dance Night (bis 01:00)": {title:"🖤 «Black & White» Dance Night (until 01:00)", notes:"Theme 'Black & White' · 📸 Photo booth · FloorCast live"},
+      "🎤 Live-Slot: Dance-Fever-Ticketstart": {title:"🎤 Live slot: Dance Fever ticket launch", notes:"~2 min live announcement · wording with marketing + Richi"},
+      "🌙 «Black & White» Ende · Gute Nacht": {title:"🌙 «Black & White» ends · Good night"}
+    },
+    so: {
+      "☕ Frühstück": {title:"☕ Breakfast"},
+      "🎉 «Fun Dance & Closing»": {notes:"all 3 coaches · finale"},
+      "👋 Ende · Verabschiedung Gäste": {title:"👋 End · farewell to guests"},
+      "🚗 Rück-Transfers Artists": {title:"🚗 Return transfers (artists)", notes:"return flights / transfers TBD"}
+    }
   };
 
   function tr(key){ return T[lang]?.[key] ?? T.de[key] ?? key; }
@@ -562,8 +599,8 @@
   let simMin = 600;
 
   function pad(n){ return String(n).padStart(2,"0"); }
-  function fmt(min){ return pad(Math.floor(min/60)) + ":" + pad(min%60); }
-  function realMin(){ const d = new Date(); return d.getHours()*60 + d.getMinutes(); }
+  function fmt(min){ return pad(Math.floor(min/60)%24) + ":" + pad(min%60); }
+  function realMin(){ const d = new Date(); let m = d.getHours()*60 + d.getMinutes(); if(m < 300) m += 1440; return m; }
   function todayKey(){ const d = new Date(); return d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate()); }
   function nowMin(){ return liveMode ? realMin() : simMin; }
   function rowMatches(who){
